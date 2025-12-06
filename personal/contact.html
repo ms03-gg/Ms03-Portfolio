@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal | Contact Me</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">◂ Back</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title">Get In Touch 💬</h1>
+            <p class="page-subtitle">I'd love to hear from you!</p>
+            
+            <!-- Contact Info Card -->
+            <div class="content-card">
+                <h2>Best Ways to Reach Me</h2>
+                <p>
+                    Whether you want to chat, collaborate, or just say hi—I'm always open to connecting with cool people!
+                </p>
+            </div>
+            
+            <!-- Contact Methods Grid -->
+            <div class="contact-grid">
+                
+                <!-- Discord -->
+                <div class="contact-method">
+                    <div class="contact-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>My primary platform for conversations</p>
+                    <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" class="contact-btn">
+                        Message on Discord
+                    </a>
+                </div>
+                
+                <!-- Email -->
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>For more formal inquiries</p>
+                    <a href="mailto:your.email@example.com" class="contact-btn">
+                        Send an Email
+                    </a>
+                </div>
+                
+                <!-- Twitter/X DM -->
+                <div class="contact-method">
+                    <div class="contact-icon">🐦</div>
+                    <h3>Twitter / X DMs</h3>
+                    <p>Quick messages and updates</p>
+                    <a href="https://twitter.com/messages/compose?recipient_id=YOUR_TWITTER_ID" target="_blank" class="contact-btn">
+                        Send a DM
+                    </a>
+                </div>
+                
+                <!-- Instagram DM -->
+                <div class="contact-method">
+                    <div class="contact-icon">📸</div>
+                    <h3>Instagram DMs</h3>
+                    <p>Casual chats and content talk</p>
+                    <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="contact-btn">
+                        Message on Instagram
+                    </a>
+                </div>
+                
+            </div>
+            
+            <!-- What to Contact About -->
+            <div class="content-card" style="margin-top: 40px;">
+                <h2>What You Can Contact Me About</h2>
+                <p>
+                    ✅ <strong>Collaborations:</strong> Let's work on something cool together<br><br>
+                    
+                    ✅ <strong>Questions:</strong> Ask me anything about my journey, interests, or goals<br><br>
+                    
+                    ✅ <strong>Networking:</strong> Connect with me if you're into aerospace, tech, or content creation<br><br>
+                    
+                    ✅ <strong>Just Vibing:</strong> Want to chat about games, aviation, or life? I'm down!<br><br>
+                    
+                    ✅ <strong>Opportunities:</strong> If you have cool opportunities or ideas, hit me up
+                </p>
+            </div>
+            
+            <!-- Response Time -->
+            <div class="content-card">
+                <h2>Response Time ⏱️</h2>
+                <p>
+                    I try to respond to messages within <strong>24-48 hours</strong>, but usually way faster on Discord. 
+                    If it's urgent or time-sensitive, mention that in your message and I'll prioritize it!
+                </p>
+                <p>
+                    <em>Note: I'm a student, so sometimes I might be slower during exam weeks or heavy school periods. 
+                    Thanks for understanding!</em>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* Contact Methods Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-method {
+            background: rgba(13, 27, 42, 0.6);
+            border: 2px solid #1B263B;
+            border-radius: 12px;
+            padding: 35px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            border-color: #415A77;
+            box-shadow: 0 10px 40px rgba(0, 209, 255, 0.15);
+        }
+        
+        .contact-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 15px rgba(0, 209, 255, 0.4));
+        }
+        
+        .contact-method h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+        }
+        
+        .contact-method p {
+            color: #B8C5D6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: transparent;
+            border: 2px solid #00D1FF;
+            border-radius: 8px;
+            color: #00D1FF;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            background: #00D1FF;
+            color: #0A0F14;
+            box-shadow: 0 0 25px rgba(0, 209, 255, 0.5);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

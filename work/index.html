@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">◂ Back</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community Mgmt</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="future.html">Future Goals</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title">Portfolio & Services 💼</h1>
+            <p class="page-subtitle">What I do and what I can offer</p>
+            
+            <!-- Introduction Card -->
+            <div class="content-card">
+                <h2>Welcome to My Professional Portfolio</h2>
+                <p>
+                    I'm a 16-year-old entrepreneur specializing in <strong>Community Management</strong>, 
+                    <strong>Social Media Management</strong>, and <strong>Graphic Design</strong>. 
+                    I help brands, creators, and communities grow their online presence through strategic engagement, 
+                    content creation, and design work.
+                </p>
+                <p>
+                    While I'm currently focused on digital services, my long-term goal is to pursue a career in 
+                    <strong>Aerospace Engineering</strong> and <strong>Aviation</strong>—merging my passion for 
+                    technology with the future of flight and space exploration.
+                </p>
+            </div>
+            
+            <!-- Services Overview -->
+            <div class="services-grid">
+                
+                <!-- Community Management -->
+                <a href="community.html" class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Community & Social Media Management</h3>
+                    <p>
+                        Building engaged communities, managing Discord servers, moderating platforms, 
+                        and growing social media presence across multiple channels.
+                    </p>
+                    <span class="service-link">View Portfolio →</span>
+                </a>
+                
+                <!-- Graphic Design -->
+                <a href="design.html" class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Graphic Design</h3>
+                    <p>
+                        Creating logos, banners, social media graphics, branding materials, and visual 
+                        content that helps brands stand out.
+                    </p>
+                    <span class="service-link">View Portfolio →</span>
+                </a>
+                
+                <!-- Future Goals -->
+                <a href="future.html" class="service-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Future: Aerospace Engineering</h3>
+                    <p>
+                        My ultimate career path lies in aerospace engineering and aviation—designing 
+                        aircraft, contributing to space exploration, and pushing technological boundaries.
+                    </p>
+                    <span class="service-link">Learn More →</span>
+                </a>
+                
+            </div>
+            
+            <!-- Why Work With Me -->
+            <div class="content-card" style="margin-top: 40px;">
+                <h2>Why Work With Me?</h2>
+                <p>
+                    ⚡ <strong>Reliable & Professional:</strong> I treat every project seriously and deliver quality work on time<br><br>
+                    
+                    🎯 <strong>Results-Driven:</strong> I focus on measurable growth—whether it's engagement, followers, or community activity<br><br>
+                    
+                    💡 <strong>Creative Problem Solver:</strong> I bring fresh ideas and innovative solutions to challenges<br><br>
+                    
+                    🤝 <strong>Great Communicator:</strong> I keep clients updated, respond quickly, and make collaboration easy<br><br>
+                    
+                    📈 <strong>Always Learning:</strong> I stay updated on trends, tools, and best practices in digital marketing and design
+                </p>
+            </div>
+            
+            <!-- CTA Card -->
+            <div class="content-card cta-card">
+                <h2>Ready to Work Together?</h2>
+                <p>
+                    Whether you need community management, social media growth, or graphic design work, 
+                    I'm here to help. Let's discuss your project and see how I can contribute to your success!
+                </p>
+                <a href="mailto:your.email@example.com" class="cta-button">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .service-card {
+            background: rgba(13, 27, 42, 0.6);
+            border: 2px solid #1B263B;
+            border-radius: 12px;
+            padding: 35px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 209, 255, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #00D1FF;
+            box-shadow: 0 20px 50px rgba(0, 209, 255, 0.3);
+        }
+        
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 20px rgba(0, 209, 255, 0.5));
+        }
+        
+        .service-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+        
+        .service-card p {
+            color: #B8C5D6;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .service-link {
+            display: inline-block;
+            color: #00D1FF;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        /* CTA Card */
+        .cta-card {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 209, 255, 0.1) 0%, rgba(13, 27, 42, 0.6) 100%);
+            border: 2px solid #00D1FF;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: #00D1FF;
+            color: #0A0F14;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #FFFFFF;
+            box-shadow: 0 0 30px rgba(0, 209, 255, 0.6);
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

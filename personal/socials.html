@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal | My Socials</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">◂ Back</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="container">
+            <h1 class="page-title">Let's Connect 🌐</h1>
+            <p class="page-subtitle">Find me across the internet</p>
+            
+            <!-- Social Links Grid -->
+            <div class="socials-grid">
+                
+                <!-- Discord -->
+                <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" class="social-card discord">
+                    <div class="social-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>@YourUsername</p>
+                    <span class="social-tag">Most Active</span>
+                </a>
+                
+                <!-- Twitter/X -->
+                <a href="https://twitter.com/YOUR_HANDLE" target="_blank" class="social-card twitter">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter / X</h3>
+                    <p>@YourHandle</p>
+                    <span class="social-tag">Daily Updates</span>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="social-card instagram">
+                    <div class="social-icon">📸</div>
+                    <h3>Instagram</h3>
+                    <p>@YourHandle</p>
+                    <span class="social-tag">Content & Vibes</span>
+                </a>
+                
+                <!-- YouTube -->
+                <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" class="social-card youtube">
+                    <div class="social-icon">🎥</div>
+                    <h3>YouTube</h3>
+                    <p>@YourChannel</p>
+                    <span class="social-tag">Videos & Streams</span>
+                </a>
+                
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@YOUR_HANDLE" target="_blank" class="social-card tiktok">
+                    <div class="social-icon">🎵</div>
+                    <h3>TikTok</h3>
+                    <p>@YourHandle</p>
+                    <span class="social-tag">Short Content</span>
+                </a>
+                
+                <!-- Twitch (Optional) -->
+                <a href="https://twitch.tv/YOUR_CHANNEL" target="_blank" class="social-card twitch">
+                    <div class="social-icon">🎮</div>
+                    <h3>Twitch</h3>
+                    <p>@YourChannel</p>
+                    <span class="social-tag">Live Streams</span>
+                </a>
+                
+            </div>
+            
+            <!-- Note Card -->
+            <div class="content-card" style="margin-top: 40px;">
+                <h2>Where to Find Me Most</h2>
+                <p>
+                    I'm most active on <strong>Discord</strong> and <strong>Twitter/X</strong>—that's where I'm hanging out daily, 
+                    chatting with friends, sharing updates, and building connections.
+                </p>
+                <p>
+                    If you want to collab, chat about aerospace, gaming, or just vibe, hit me up on any platform. 
+                    I love meeting new people and I respond to pretty much everyone!
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        /* Social Cards Grid */
+        .socials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .social-card {
+            background: rgba(13, 27, 42, 0.6);
+            border: 2px solid #1B263B;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #FFFFFF;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .social-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 209, 255, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .social-card:hover {
+            transform: translateY(-8px);
+            border-color: #00D1FF;
+            box-shadow: 0 15px 40px rgba(0, 209, 255, 0.3);
+        }
+        
+        .social-card:hover::before {
+            opacity: 1;
+        }
+        
+        .social-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 15px rgba(0, 209, 255, 0.4));
+        }
+        
+        .social-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+        }
+        
+        .social-card p {
+            color: #B8C5D6;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        
+        .social-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(0, 209, 255, 0.2);
+            border: 1px solid #00D1FF;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #00D1FF;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .socials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
