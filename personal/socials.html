@@ -17,7 +17,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="goals.html">Goals</a></li>
             <li><a href="socials.html">Socials</a></li>
-            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
@@ -31,52 +30,48 @@
             <div class="socials-grid">
                 
                 <!-- Discord -->
-                <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" class="social-card discord">
+                <a href="https://discord.com/users/ms03.gg" target="_blank" class="social-card discord">
                     <div class="social-icon">💬</div>
                     <h3>Discord</h3>
-                    <p>@YourUsername</p>
+                    <p>ms03.gg</p>
                     <span class="social-tag">Most Active</span>
                 </a>
                 
-                <!-- Twitter/X -->
-                <a href="https://twitter.com/YOUR_HANDLE" target="_blank" class="social-card twitter">
-                    <div class="social-icon">🐦</div>
-                    <h3>Twitter / X</h3>
-                    <p>@YourHandle</p>
-                    <span class="social-tag">Daily Updates</span>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@Ms03YT" target="_blank" class="social-card youtube">
+                    <div class="social-icon">🎥</div>
+                    <h3>YouTube</h3>
+                    <p>@Ms03YT</p>
+                    <span class="social-tag">278 Subs</span>
                 </a>
                 
                 <!-- Instagram -->
-                <a href="https://instagram.com/YOUR_HANDLE" target="_blank" class="social-card instagram">
+                <a href="https://www.instagram.com/ms03.gg/" target="_blank" class="social-card instagram">
                     <div class="social-icon">📸</div>
                     <h3>Instagram</h3>
-                    <p>@YourHandle</p>
-                    <span class="social-tag">Content & Vibes</span>
+                    <p>@ms03.gg</p>
+                    <span class="social-tag">Growing Soon</span>
                 </a>
                 
-                <!-- YouTube -->
-                <a href="https://youtube.com/@YOUR_CHANNEL" target="_blank" class="social-card youtube">
-                    <div class="social-icon">🎥</div>
-                    <h3>YouTube</h3>
-                    <p>@YourChannel</p>
-                    <span class="social-tag">Videos & Streams</span>
+                <!-- Twitter/X -->
+                <a href="https://x.com/Ms03_GG" target="_blank" class="social-card twitter">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter / X</h3>
+                    <p>@Ms03_GG</p>
+                    <span class="social-tag">Future Goals</span>
                 </a>
                 
-                <!-- TikTok -->
-                <a href="https://tiktok.com/@YOUR_HANDLE" target="_blank" class="social-card tiktok">
-                    <div class="social-icon">🎵</div>
-                    <h3>TikTok</h3>
-                    <p>@YourHandle</p>
-                    <span class="social-tag">Short Content</span>
-                </a>
-                
-                <!-- Twitch (Optional) -->
-                <a href="https://twitch.tv/YOUR_CHANNEL" target="_blank" class="social-card twitch">
-                    <div class="social-icon">🎮</div>
-                    <h3>Twitch</h3>
-                    <p>@YourChannel</p>
-                    <span class="social-tag">Live Streams</span>
-                </a>
+                <!-- YouTube 2 - Coming Soon (Locked) -->
+                <div class="social-card locked youtube2">
+                    <div class="lock-overlay">
+                        <div class="lock-icon">🔒</div>
+                        <p class="lock-text">Under Development</p>
+                    </div>
+                    <div class="social-icon" style="opacity: 0.3;">🎬</div>
+                    <h3 style="opacity: 0.3;">YouTube (Work)</h3>
+                    <p style="opacity: 0.3;">Coming Soon</p>
+                    <span class="social-tag" style="opacity: 0.3;">New Channel</span>
+                </div>
                 
             </div>
             
@@ -84,12 +79,16 @@
             <div class="content-card" style="margin-top: 40px;">
                 <h2>Where to Find Me Most</h2>
                 <p>
-                    I'm most active on <strong>Discord</strong> and <strong>Twitter/X</strong>—that's where I'm hanging out daily, 
-                    chatting with friends, sharing updates, and building connections.
+                    I'm most active on <strong>Discord (ms03.gg)</strong>—that's where I'm hanging out daily, 
+                    chatting with people, and building communities.
                 </p>
                 <p>
-                    If you want to collab, chat about aerospace, gaming, or just vibe, hit me up on any platform. 
-                    I love meeting new people and I respond to pretty much everyone!
+                    Instagram and Twitter are still growing—I'll be more active there after my board exams wrap up. 
+                    YouTube might get some hobby content (probably football-related stuff), but I'm still figuring that out.
+                </p>
+                <p>
+                    If you want to connect, collab, or just chat about aviation, football, or anything else, 
+                    hit me up on Discord. I respond to pretty much everyone!
                 </p>
             </div>
         </div>
@@ -167,6 +166,46 @@
             font-size: 0.85rem;
             color: #00D1FF;
             margin-top: 10px;
+        }
+        
+        /* Locked Card Style */
+        .social-card.locked {
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        
+        .lock-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 15, 20, 0.85);
+            backdrop-filter: blur(3px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        
+        .lock-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: lockPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes lockPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .lock-text {
+            color: #00D1FF;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         @media (max-width: 768px) {
